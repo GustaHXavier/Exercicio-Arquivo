@@ -7,7 +7,8 @@ namespace arquivos {
     class Program {
         static void Main(string[] args) {
 
-            string sourceFile = @"C:\Users\gugu2\OneDrive\Área de Trabalho\temp\origem.txt";
+            Console.WriteLine("Digite o caminho do diretório: ");
+            string sourceFile = Console.ReadLine();
 
             try {
                 string[] linhas = File.ReadAllLines(sourceFile);
